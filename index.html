@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gerador de Senhas</title>
+</head>
+
+<body>
+    <div id="card">
+        <img src="img/illustration.svg" alt="" id="password_img">
+        <h1 id="title">Gerar senha</h1>
+
+        <div id="password_container">
+            <span id="password"></span>
+            <button id="copy"><i class="fa-solid fa-copy"></i></button>
+        </div>
+
+        <div id="password_items">
+            <div class="item">
+                <input type="number" id="size">
+                <label for="size">Quantidade de caracteres</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="include_uppercase">
+                <label for="include_uppercase">Incluir letra maiúscula</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="include_lowercase">
+                <label for="include_lowercase">Incluir letra minúscula</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="include_number">
+                <label for="include_number">Incluir número</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="include_special_character">
+                <label for="include_special_character">Incluir caractere especial</label>
+            </div>
+            <button id="generate">Gerar senha</button>
+        </div>
+    </div>
+
+    <script src="./javascript/script.js"></script>
+</body>
+
+
+</html>

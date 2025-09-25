@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+:root {
+    --color-primary: #8BC34A;
+    --color-primary-light: #8BC34AA6;
+    --color-neutral-light: #f8fafc;
+    --color-neutral-dark: #24232b;
+    --color-background: #13121a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alan Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-background);
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #24232b;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 400px;
+}
+
+#password_container, #password_items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#password_container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13121a;
+    padding: 12px;
+    border-radius: 10px;
+    color: #f8fafc;
+}
+
+/* IMAGEM */
+#password_img {
+    width: 100px;
+}
+
+/* TÍTULO */
+#title {
+    color: var(--color-neutral-light);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* SENHA + BOTÃO */
+#password_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-background);
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: var(--color-neutral-light);
+}
+
+#password {
+    font-size: 1.2rem;
+    word-break: break-all;
+}
+
+#copy {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: var(--color-neutral-dark);
+    transition: background-color 0.2s;
+}
+
+#copy:hover {
+    background-color: var(--color-primary-light);
+}
+
+/* ITENS DE CONFIGURAÇÃO */
+#password_items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#password_items .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#password_items label {
+    color: var(--color-neutral-light);
+    font-size: 0.95rem;
+}
+
+/* INPUT NUMBER */
+#password_items input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--color-background);
+    color: var(--color-neutral-light);
+}
+
+/* CHECKBOX */
+#password_items input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-primary);
+}
+
+/* BOTÃO GERAR SENHA */
+#generate {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    color: var(--color-neutral-dark);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+#generate:hover {
+    background-color: var(--color-primary-light);
+}
